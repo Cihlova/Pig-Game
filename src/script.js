@@ -13,6 +13,7 @@ const current1 = document.querySelector("#current--1");
 let scores, currentScore, activePlayer, isPlaying, score;
 
 const init = function () {
+  dice.classList.add("hidden");
   player0.classList.remove("player--winner");
   player1.classList.remove("player--winner");
   player0.classList.add("player--active");
@@ -31,7 +32,7 @@ const init = function () {
 init();
 
 // Working further with the elements
-dice.classList.add("hidden");
+
 const playerToggle = function () {
   player0.classList.toggle("player--active");
   player1.classList.toggle("player--active");
